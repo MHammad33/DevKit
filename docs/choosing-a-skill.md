@@ -20,6 +20,7 @@ Use the debug skill. The add button does nothing when clicked.
 
 | Situation | Start skill | Typical path |
 | --- | --- | --- |
+| I am starting a new task or phase | `model-check` | model-check → the skill for the task |
 | I have a rough own-product idea | `idea` | [new-idea.md](new-idea.md) |
 | I have a validated idea (pursue) | — | [new-project.md](new-project.md) |
 | I am adding a feature | — | [new-feature.md](new-feature.md) |
@@ -39,6 +40,7 @@ Use the debug skill. The add button does nothing when clicked.
 
 | You just finished | Do this next |
 | --- | --- |
+| `model-check` | Confirm, then run the skill for the task |
 | `idea` (pursue) | Write `PROJECT.md` → [new-project.md](new-project.md) |
 | `idea` (pivot) | Re-run **idea** or edit `IDEA.md` |
 | `idea` (kill) | Stop |

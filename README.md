@@ -14,7 +14,7 @@ A small set of skills for coding agents. Use it when you do not know what to do 
 
 ## Why
 
-Agents need a clear outcome, the constraints that matter, and proof that the work is done. Engineering Compass turns that into nine focused skills.
+Agents need a clear outcome, the constraints that matter, and proof that the work is done. Engineering Compass turns that into a set of focused skills.
 
 ## Install
 
@@ -43,6 +43,7 @@ Skill name lookup: [docs/choosing-a-skill.md](docs/choosing-a-skill.md)
 
 | Group | Skills |
 | --- | --- |
+| Start | `model-check` |
 | Learn | `understand` |
 | Decide | `idea` · `design` · `plan` |
 | Deliver | `build` |
