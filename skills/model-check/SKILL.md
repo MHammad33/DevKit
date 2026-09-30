@@ -20,7 +20,7 @@ Before starting a new task, suggest the model and effort that fit it. Then wait.
 
 2. Name the real models the current tool offers. In Claude, for example, Fast is Sonnet 5 and Strongest is Opus 5.5.
 3. If the tool has no effort setting, suggest only the model.
-4. If the same thing went wrong twice in this task, suggest one effort level higher.
+4. If the same thing went wrong twice in this task, suggest one effort level higher. Above xhigh, that means max.
 5. Print the suggestion in the format below, then stop. Don't start the task until the user confirms, even for quick tasks.
 
 ## Report
@@ -34,7 +34,7 @@ Continue?
 
 - Each new phase counts as a new task. Run the check again when moving from design to plan, plan to build, and so on.
 - A follow-up on the task already in progress doesn't need a new check.
-- Never suggest max effort.
+- Don't start a task at max effort. Suggest max only when a task at xhigh went wrong twice.
 
 ## Return
 
