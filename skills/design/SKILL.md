@@ -12,12 +12,7 @@ Settle important product and technical choices before implementation.
 
 1. Read the request, `PROJECT.md`, project `AGENTS.md`, relevant code, and prior **understand** output.
 2. Identify decisions implementation must not invent silently.
-3. Interview the user in rounds until the design has no open branches. Map decisions as a tree: each decision may depend on others.
-   - The **frontier** is every decision whose prerequisites are already settled. Ask the whole frontier in one round.
-   - Number each question. Give a recommended answer for each, and word it so "yes" accepts that recommendation.
-   - Wait for answers. Settled decisions open new questions, so recompute the frontier and ask the next round. A question that depends on an unanswered one waits for a later round.
-   - Find facts yourself. Read the code, `PROJECT.md`, and `docs/flows/` with read-only tools before asking. Ask the user only for decisions.
-   - Stop when the frontier is empty. Put every settled choice in **Decisions**, and every unsettled one in **Open questions**.
+3. Run the interview in the **Interview method** section below until the frontier is empty. Put every settled choice in **Decisions**, and every unsettled one in **Open questions**.
 4. Write the design — `docs/<feature-slug>/design.md` by default, chat-only for a small change if the user prefers.
 5. Tailor sections to the task. Include only what matters.
 6. Stop and ask: "Please review the design. Reply approved or request changes."
@@ -68,9 +63,37 @@ Unresolved items, and whether they block implementation.
 - Constraints and v1 scope are already fully settled in `PROJECT.md` — skip design.
 - Don't run **plan** or **build** until the human approves or asks for changes.
 
+## Interview method
+
+Interview the user relentlessly until you reach a shared understanding. Map this as a **design tree**: every decision branches into the decisions that hang off it.
+
+Work the tree in **rounds**. The **frontier** is every decision whose prerequisites are already settled: the questions you can ask _now_ without guessing at answers you haven't heard yet. Ask the whole frontier in one round: number each question and give your recommended answer. Then wait for the user's answers before the next round.
+
+Format a round like so:
+
+```
+❓ **Q1** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>
+
+➡️ <your recommended answer>
+
+---
+
+❓ **Q2** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>
+
+➡️ <your recommended answer>
+```
+
+Word each question so "yes" accepts your recommended answer.
+
+Each round the user answers reshapes the tree: settled decisions push the frontier outward and unblock questions that depended on them. Recompute the frontier and ask the next round. A question whose answer depends on another question still open in this round belongs to a _later_ round, not this one.
+
+Finding _facts_ is your job, never the user's. When a frontier question needs a fact from the environment (filesystem, tools, etc.), dispatch a sub-agent to find it; don't ask the user for anything you could look up yourself. Don't block on it: a running exploration is an unsettled prerequisite, so only the questions downstream of it wait for the sub-agent to report; ask the rest of the frontier now. The _decisions_ are the user's: put each to them and wait.
+
+The session is done when the frontier is empty: every branch of the design tree visited, nothing left silently assumed. Do not act on it until the user confirms you have reached a shared understanding.
+
 ## Credit
 
-The interview method in step 3 is adapted from Matt Pocock's `grilling` skill (MIT License, Copyright (c) 2026 Matt Pocock), in [mattpocock/skills](https://github.com/mattpocock/skills).
+The interview method above is taken from Matt Pocock's `grilling` skill (MIT License, Copyright (c) 2026 Matt Pocock), in [mattpocock/skills](https://github.com/mattpocock/skills).
 
 ## Return
 
