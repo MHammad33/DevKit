@@ -2,6 +2,7 @@
 name: design
 description: "Decide what to build and how before coding. Use for features, interfaces, data, security, or non-trivial changes. Writes docs/<feature>/design.md and waits for approval."
 argument-hint: "<feature, problem, or PROJECT.md context>"
+disable-model-invocation: true
 ---
 
 # Design

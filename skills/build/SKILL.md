@@ -2,6 +2,7 @@
 name: build
 description: "Implement the smallest complete change using test-driven development (red, green, refactor). Use when scope is clear, design is approved, or the task is a small decided fix."
 argument-hint: "<task, plan item, or approved design path>"
+disable-model-invocation: true
 ---
 
 # Build

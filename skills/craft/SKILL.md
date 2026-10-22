@@ -2,6 +2,7 @@
 name: craft
 description: "Create a new skill, or improve an existing one. Use when the user wants to make, create, or craft a skill, turn a conversation into a skill, or edit/fix an existing SKILL.md."
 argument-hint: "<skill idea, or existing skill to fix>"
+disable-model-invocation: true
 ---
 
 # Craft

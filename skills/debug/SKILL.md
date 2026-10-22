@@ -2,6 +2,7 @@
 name: debug
 description: "Find the root cause of broken behavior, systematically. Use for errors, bugs, and production issues. Do not rewrite code before the cause is understood."
 argument-hint: "<symptoms, errors, logs, reproduction steps>"
+disable-model-invocation: true
 ---
 
 # Debug

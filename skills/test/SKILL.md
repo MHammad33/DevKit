@@ -2,6 +2,7 @@
 name: test
 description: "Verify a change with evidence. Use after build or improve, or when the user asks to verify a branch, fix, or feature."
 argument-hint: "<change description, acceptance criteria, or design path>"
+disable-model-invocation: true
 ---
 
 # Test
