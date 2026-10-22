@@ -183,12 +183,18 @@ After v1, clarity for new work follows [new-feature.md](new-feature.md): underst
 | **Constraints** status | What to do |
 | --- | --- |
 | Framework, persistence, auth, hosting, and other major choices are written | Skip design for now. Go to Stage 6. |
-| One or more major choices are missing or marked TBD | Run the **design** skill for v1. Wait for your approval. |
+| One or more major choices are missing or marked TBD | Run the **grill-me** skill, then the **design** skill for v1. Wait for your approval. |
 
 **Example prompt:**
 
 ```text
-Use the design skill. Read PROJECT.md and propose a technical design for v1.
+Use the grill-me skill. Read PROJECT.md and stress-test the technical choices for v1.
+```
+
+Then:
+
+```text
+Use the design skill. Write up the v1 technical decisions from the grilling.
 ```
 
 **What to do after design is written:**

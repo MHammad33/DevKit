@@ -60,7 +60,7 @@ Unresolved items, and whether they block implementation.
 ## Boundaries
 
 - An obvious bug with a clear fix, a rename, a typo, a config tweak — skip design.
-- Constraints and v1 scope are already fully settled in `PROJECT.md` — skip design.
+- Constraints and v1 scope are already fully settled in `PROJECT.md` — skip both `grill-me` and design.
 - Don't run **plan** or **build** until the human approves or asks for changes.
 
 ## Return

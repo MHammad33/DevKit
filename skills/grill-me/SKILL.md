@@ -10,3 +10,7 @@ disable-model-invocation: true
 Interview me relentlessly about every aspect of this plan until we reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one-by-one.
 
 If a question can be answered by exploring the codebase, explore the codebase instead.
+
+## Credit
+
+The interview method above is taken from Matt Pocock's `grilling` skill (MIT License, Copyright (c) 2026 Matt Pocock), in [mattpocock/skills](https://github.com/mattpocock/skills).
