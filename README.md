@@ -19,7 +19,7 @@ Agents need a clear outcome, the constraints that matter, and proof that the wor
 ## Install
 
 ```bash
-npx skills add MHammad33/hammad-engineering
+npx skills add MHammad33/DevKit
 ```
 
 Setup and troubleshooting: [docs/install.md](docs/install.md)
