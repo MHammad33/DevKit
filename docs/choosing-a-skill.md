@@ -20,7 +20,9 @@ Use the debug skill. The add button does nothing when clicked.
 
 | Situation | Start skill | Typical path |
 | --- | --- | --- |
-| I am starting a new task or phase | `model-check` | model-check → the skill for the task |
+| I do not know which path fits | `ask-hammad` | ask-hammad → the path it prints |
+| I want a model and effort suggestion | `model-check` | model-check → the skill for the task |
+| I need to pin down a vague task | `grill-me` | grill-me → design (large) or build (medium) |
 | I have a rough own-product idea | `idea` | [new-idea.md](new-idea.md) |
 | I have a validated idea (pursue) | — | [new-project.md](new-project.md) |
 | I am adding a feature | — | [new-feature.md](new-feature.md) |
@@ -40,7 +42,9 @@ Use the debug skill. The add button does nothing when clicked.
 
 | You just finished | Do this next |
 | --- | --- |
+| `ask-hammad` | Run the first command it prints |
 | `model-check` | Confirm, then run the skill for the task |
+| `grill-me` | **design** in the same session (large), or **build** (medium) |
 | `idea` (pursue) | Write `PROJECT.md` → [new-project.md](new-project.md) |
 | `idea` (pivot) | Re-run **idea** or edit `IDEA.md` |
 | `idea` (kill) | Stop |
@@ -77,24 +81,25 @@ Use the debug skill. The add button does nothing when clicked.
 
 ---
 
-## Typical paths (short)
+## The four paths
 
-**Small bug**
+Pick the size. `/ask-hammad <task>` picks for you.
+
+| Size | Example | Path |
+| --- | --- | --- |
+| Small | Bug, tweak, clear task | `build` → `test`. Run `debug` first for a bug. |
+| Medium | One feature, one session | `grill-me` → `build` → `test` → `review` |
+| Large | Multi-session feature, new project | `grill-me` → `design` (same session) → approve → `plan` → `build` → `test` → `review` |
+| Hotfix | Production is failing | `debug` → approve the fix → `build` (regression test first) → `test` → `review` |
+
+In unfamiliar code, run `understand` before any path. For working code that is hard to maintain, run `improve`, then `test`.
+
+## Tracker
+
+No skill names a tracker. To say where tasks are published, add one line to the project's `AGENTS.md`:
 
 ```text
-debug → build → test
-```
-
-**New feature**
-
-```text
-understand → design → approve → plan → build → test → review
-```
-
-**Messy working code**
-
-```text
-understand → improve → test
+Tracker: Basecamp, publish by hand
 ```
 
 More detail: [workflows.md](workflows.md).

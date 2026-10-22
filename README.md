@@ -37,15 +37,19 @@ Setup and troubleshooting: [docs/install.md](docs/install.md)
 
 Each guide is a step-by-step workflow. Skills are the tools inside those steps.
 
-Skill name lookup: [docs/choosing-a-skill.md](docs/choosing-a-skill.md)
+Not sure which path fits? Run `/ask-hammad <task>`. It names the size and prints the skills to run.
+
+The four paths (small, medium, large, hotfix) and a skill name lookup are in [docs/choosing-a-skill.md](docs/choosing-a-skill.md).
+
+Every skill except `idea` runs only when you call it.
 
 ## Skills
 
 | Group | Skills |
 | --- | --- |
-| Start | `model-check` |
+| Start | `ask-hammad` · `model-check` |
 | Learn | `understand` |
-| Decide | `idea` · `design` · `plan` |
+| Decide | `idea` · `grill-me` · `design` · `plan` |
 | Deliver | `build` |
 | Check | `test` · `review` · `debug` · `improve` |
 
