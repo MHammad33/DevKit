@@ -26,13 +26,13 @@ Repo state at planning time: 14 skills. `unslop` already has `disable-model-invo
 
 > Milestone: the skill set is final. Docs are what's left.
 
-- [ ] **Task 4: Update docs and README**
+- [x] **Task 4: Update docs and README**
   - Goal: Make `README.md` and `docs/choosing-a-skill.md` match the new set. Remove `write-a-prd`, add `ask-hammad`, and show the four paths in one place only (`docs/choosing-a-skill.md`). Other docs link to that place. Add the one-line `Tracker:` convention for a project's `AGENTS.md`, as the only tracker mention outside examples.
   - Files likely touched: `README.md`, `docs/choosing-a-skill.md`, `AGENTS.md` if it carries the tracker line
   - Done when: A grep for `write-a-prd` returns hits only in `docs/workflow-v2/`. A grep for `Basecamp` or `GitHub issue` finds nothing in `skills/`. The four paths are written out in one file only.
   - Depends on: Task 3
 
-- [ ] **Task 5: Docs sweep and install check**
+- [x] **Task 5: Docs sweep and install check**
   - Goal: Re-grep `docs/` for `model-check` as a first step and for stale references to removed or changed skills. Fix what turns up. Then run `npx skills add` from a clean directory.
   - Files likely touched: `docs/new-feature.md`, `docs/debugging.md`, `docs/workflows.md`, others only if the grep hits
   - Done when: The sweep finds no stale references. The install lists 14 skills.
