@@ -78,7 +78,7 @@ Each path skips stages.
 4. `ask-hammad` exists and matches the four paths above (small, medium, large, hotfix). It reminds you to run `design` in the same session as `grill-me`.
 5. `skills/model-check` wording no longer says "every new task and every new phase".
 6. No skill file contains the word "Basecamp", "GitHub issue" or another tracker name, except as an example in the tracker docs.
-7. `README.md` and `docs/choosing-a-skill.md` match the new set. The four paths appear in one place only. Other docs link to it.
+7. `README.md` and `docs/choosing-a-skill.md` match the new set. The four paths appear in one place only (`docs/choosing-a-skill.md`). Other docs link to it. Exception: `skills/ask-hammad/SKILL.md` keeps its own copy, because per-skill installs can't share a file.
 
 ## Out of scope
 

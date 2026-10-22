@@ -39,7 +39,7 @@ Step 2.
 
 1. Run the **grill-me** skill first. **design** stops if there is no grilling.
 2. Run the **design** skill.
-3. Write `docs/<feature-slug>/design.md` in the **project** repo (or chat-only if the change is tiny).
+3. Write `docs/<feature-slug>/design.md` in the **project** repo. For a tiny change, skip design and use the small path in `docs/choosing-a-skill.md`.
 4. Cover approach, decisions, requirements, test strategy, and out of scope.
 
 **Example prompt**
