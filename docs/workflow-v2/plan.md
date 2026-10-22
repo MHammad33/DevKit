@@ -32,7 +32,7 @@ Repo state at planning time: 14 skills. `unslop` already has `disable-model-invo
   - Done when: A grep for `write-a-prd` returns hits only in `docs/workflow-v2/`. A grep for `Basecamp` or `GitHub issue` finds nothing in `skills/`. The four paths are written out in one file only.
   - Depends on: Task 3
 
-- [ ] **Task 5: Docs sweep and install check**
+- [x] **Task 5: Docs sweep and install check**
   - Goal: Re-grep `docs/` for `model-check` as a first step and for stale references to removed or changed skills. Fix what turns up. Then run `npx skills add` from a clean directory.
   - Files likely touched: `docs/new-feature.md`, `docs/debugging.md`, `docs/workflows.md`, others only if the grep hits
   - Done when: The sweep finds no stale references. The install lists 14 skills.
