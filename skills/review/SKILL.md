@@ -2,6 +2,7 @@
 name: review
 description: "Independent read-only review of an implementation. Reports findings and a verdict without editing code. Use for non-trivial or security-sensitive changes, or when the user asks for a review."
 argument-hint: "<branch, PR, diff, or change description>"
+disable-model-invocation: true
 context: fork
 ---
 

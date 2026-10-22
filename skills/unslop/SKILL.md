@@ -1,6 +1,7 @@
 ---
 name: unslop
 description: Cut AI tells from any writing.
+argument-hint: "<text or file to clean up>"
 disable-model-invocation: true
 ---
 

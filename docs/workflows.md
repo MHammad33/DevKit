@@ -108,12 +108,18 @@ Clone locally. Copy [`templates/project-AGENTS.md`](../templates/project-AGENTS.
 
 ### Step 7 — Design v1
 
-`PROJECT.md` **Constraints** is empty → run **design**.
+`PROJECT.md` **Constraints** is empty → run **grill-me**, then **design**.
 
 **Prompt**
 
 ```text
-Use the design skill. Read PROJECT.md and propose a technical design for v1.
+Use the grill-me skill. Read PROJECT.md and stress-test the technical choices for v1.
+```
+
+Then:
+
+```text
+Use the design skill. Write up the v1 technical decisions from the grilling.
 ```
 
 **Output**
@@ -223,13 +229,19 @@ You want Google sign-in on an existing app. Real choices exist: OAuth flow, sess
 **Path**
 
 ```text
-understand (if needed) → design → [wait for approval] → plan (if multi-step) → build → test → review
+understand (if needed) → grill-me → design → [wait for approval] → plan (if multi-step) → build → test → review
 ```
 
 **Example prompt**
 
 ```text
-Use the design skill. Add Google sign-in. Read PROJECT.md and existing auth code first.
+Use the grill-me skill. Add Google sign-in. Read PROJECT.md and existing auth code first.
+```
+
+Then:
+
+```text
+Use the design skill.
 ```
 
 **Output**

@@ -96,12 +96,18 @@ Are framework, persistence, auth, hosting, and other technical choices already w
 | Answer | What to do |
 | --- | --- |
 | **Yes** | Skip design for now. Go to Step 6. |
-| **No** | Run the **design** skill for v1. Wait for your approval. Then go to Step 6. |
+| **No** | Run the **grill-me** skill, then the **design** skill for v1. Wait for your approval. Then go to Step 6. |
 
 **Example prompt**
 
 ```text
-Use the design skill. Read PROJECT.md and propose a technical design for v1.
+Use the grill-me skill. Read PROJECT.md and stress-test the technical choices for v1.
+```
+
+Then:
+
+```text
+Use the design skill. Write up the v1 technical decisions from the grilling.
 ```
 
 **Result**

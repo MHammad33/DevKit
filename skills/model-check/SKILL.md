@@ -1,6 +1,8 @@
 ---
 name: model-check
-description: "Suggest the model and effort level that fit a task, then wait for confirmation before starting. Use at the start of every new task and every new phase (for example, design approved → build), even small ones. Skip it for follow-ups on the task already in progress."
+description: "Suggest the model and effort level that fit a task, then wait for confirmation before starting. Use when you want a model and effort suggestion before starting a task or phase."
+argument-hint: "<task you are about to start>"
+disable-model-invocation: true
 ---
 
 # Model check

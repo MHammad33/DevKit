@@ -22,6 +22,12 @@ Update this table after scaffolding when commands are known.
 
 -
 
+## Tracker
+
+<!-- Say where tasks are published, in one line. For example, "Tracker: Basecamp, publish by hand". Keep "none" if specs and tasks stay in docs/. -->
+
+Tracker: none
+
 ## Sensitive areas
 
 <!-- Paths or systems that need extra care. Leave blank if none yet. -->

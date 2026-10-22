@@ -2,6 +2,7 @@
 name: understand
 description: "Map how the relevant code works as a flow trace, saved to docs/flows/, before changing it. Use when starting a task in unfamiliar code, or before design on a non-trivial change."
 argument-hint: "<task, area, or question>"
+disable-model-invocation: true
 ---
 
 # Understand

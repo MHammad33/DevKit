@@ -2,6 +2,7 @@
 name: plan
 description: "Split approved design into tasks by working result, one build pass each. Use when work spans multiple build sessions. Skip for single-pass work (use build) or unapproved design (use design). Does not write code."
 argument-hint: "<approved design path or feature name>"
+disable-model-invocation: true
 ---
 
 # Plan

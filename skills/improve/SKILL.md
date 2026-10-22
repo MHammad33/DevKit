@@ -2,6 +2,7 @@
 name: improve
 description: "Simplify existing code without changing intended behavior. Use when code works but is hard to maintain."
 argument-hint: "<files, module, or area to improve>"
+disable-model-invocation: true
 ---
 
 # Improve

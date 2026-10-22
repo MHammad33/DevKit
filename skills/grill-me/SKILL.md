@@ -1,6 +1,8 @@
 ---
 name: grill-me
 description: "Interview the user relentlessly about a plan or design until reaching shared understanding, resolving each branch of the decision tree. Use when user wants to stress-test a plan, get grilled on their design, or mentions \"grill me\"."
+argument-hint: "<plan or design to stress-test>"
+disable-model-invocation: true
 ---
 
 # Grill Me
@@ -8,3 +10,7 @@ description: "Interview the user relentlessly about a plan or design until reach
 Interview me relentlessly about every aspect of this plan until we reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one-by-one.
 
 If a question can be answered by exploring the codebase, explore the codebase instead.
+
+## Credit
+
+The interview method above is taken from Matt Pocock's `grilling` skill (MIT License, Copyright (c) 2026 Matt Pocock), in [mattpocock/skills](https://github.com/mattpocock/skills).
